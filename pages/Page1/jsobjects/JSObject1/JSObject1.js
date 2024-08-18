@@ -152,4 +152,21 @@ export default {
 			 }
 	},
 	
+	//----when a user select a table row, show the fruit image
+	tblRowSelectShwImg(){
+		let selRowImgUrl=Table1.selectedRow.Image
+		     if (selRowImgUrl.indexOf('d/') !=-1){
+				  let stpos=selRowImgUrl.indexOf('d/')+2
+					let endpos=selRowImgUrl.lastIndexOf('/v')
+					let urlID=selRowImgUrl.substring(stpos,endpos)
+					let fullUrl='https://drive.google.com/thumbnail?id='+urlID+'&sz=w180';//+sz;
+				  Main_Img.setImage(fullUrl);
+				 
+				 return fullUrl;
+					
+			 }
+		
+		
+	},
+	
 }

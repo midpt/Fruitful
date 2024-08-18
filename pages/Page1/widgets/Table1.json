@@ -49,11 +49,12 @@
   ],
   "columnUpdatedAt": 1723944224160,
   "columnWidthMap": {
-    "Comment": 115,
+    "Comment": 60,
     "Date": 134,
+    "Description": 121,
     "Fruit_Types": 82,
     "Fruit_Types1": 105,
-    "Grading": 146,
+    "Grading": 103,
     "Image": 94,
     "Price": 60,
     "Quantity": 60,
@@ -150,6 +151,9 @@
     },
     {
       "key": "onAddNewRowSave"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
   "enableClientSideSearch": true,
@@ -173,6 +177,7 @@
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "onAddNewRowSave": "{{InsertOneRow_qry.run().then(() => {\n  Fetch_qry.run();\n});}}",
+  "onRowSelected": "{{JSObject1.tblRowSelectShwImg();}}",
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumns": {
