@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "66bb01612693f95ee1a1358d_d3b040b0-8821-4326-934e-1dff937931d0",
+  "id": "Page1_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      },
+      {
+        "name": "mdl1_multiSelOptList",
+        "value": "[]"
+      },
+      {
+        "name": "mdl1_multiSelRes",
+        "value": "''"
+      }
+    ]
+  }
+}
