@@ -9,6 +9,7 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicTriggerPathList": [],
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
@@ -24,7 +25,7 @@
   "mobileRightColumn": 12,
   "mobileTopRow": 37,
   "needsErrorInfo": false,
-  "objectFit": "cover",
+  "objectFit": "auto",
   "parentColumnSpace": 12.3125,
   "parentId": "0",
   "parentRowSpace": 10,
