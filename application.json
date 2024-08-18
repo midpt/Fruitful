@@ -1,5 +1,8 @@
 {
   "appIsExample": false,
+  "appLayout": {
+    "type": "MOBILE"
+  },
   "applicationDetail": {
     "appPositioning": {
       "type": "FIXED"
@@ -14,6 +17,11 @@
   "applicationVersion": 2,
   "collapseInvisibleWidgets": true,
   "color": "#FFDEDE",
+  "embedSetting": {
+    "height": "720px",
+    "showNavigationBar": false,
+    "width": "1024px"
+  },
   "evaluationVersion": 2,
   "icon": "arrow-left",
   "pages": [
@@ -22,6 +30,9 @@
       "isDefault": true
     }
   ],
+  "unpublishedAppLayout": {
+    "type": "MOBILE"
+  },
   "unpublishedApplicationDetail": {
     "appPositioning": {
       "type": "FIXED"
