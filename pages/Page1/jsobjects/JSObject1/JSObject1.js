@@ -161,9 +161,13 @@ export default {
 					let urlID=selRowImgUrl.substring(stpos,endpos)
 					let fullUrl='https://drive.google.com/thumbnail?id='+urlID+'&sz=w180';//+sz;
 				  Main_Img.setImage(fullUrl);
-				 
 				 return fullUrl;
-					
+			 }else{ 
+				  //----no valide url found show defualt no image
+				  let urlID='12cWGofliO-FPvx7Cm3bIA9aXn7Vpjs2F'
+				  let fullUrl='https://drive.google.com/thumbnail?id='+urlID+'&sz=w180';
+				  Main_Img.setImage(fullUrl);
+	
 			 }
 		
 		
