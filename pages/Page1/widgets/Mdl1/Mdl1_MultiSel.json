@@ -60,7 +60,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 59,
   "serverSideFiltering": false,
-  "sourceData": "{{\nFetchDrpDwn_qry.data.map( p => ({label:p.Season, value: p.Season}) )\n}}",
+  "sourceData": "{{\n   FetchDrpDwn_qry.data.filter(itm =>itm.Season !=='').map(r=>\n\t  {\n\t\t   return {label:r.Season, value:r.Season} \n\t   }\n\t ) \n}}",
   "topRow": 31,
   "type": "MULTI_SELECT_WIDGET_V2",
   "version": 1,
