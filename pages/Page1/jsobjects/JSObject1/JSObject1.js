@@ -177,8 +177,8 @@ export default {
 		//Table1.pageOffset, Table1.pageSize  	Table1.pageOffset Table1.pageNo
 		let totalRec=Table1.totalRecordsCount;
 		
-			
-		showAlert('Table1.totalRecordsCount='+Table1.totalRecordsCount+'  pageSize='+Table1.pageSize+'\n pageOffset='+Table1.pageOffset+' pageNum='+Table1.pageNo+' \ntableData.length='+Table1.tableData.length);
+		 
+		showAlert('Table1.totalRecordsCount='+Table1.totalRecordsCount+'  pageSize='+Table1.pageSize+'\n pageOffset='+Table1.pageOffset+' pageNum='+Table1.pageNo+' \ntableData.length='+Table1.tableData.length+' Fetch_qry.data?.length='+Fetch_qry.data?.length);
 		
 	// Table1.pageNo
 		
