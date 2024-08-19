@@ -15,8 +15,8 @@
         },
         "pagination": {
           "data": {
-            "limit": "20",
-            "offset": "0"
+            "limit": "{{Table1.pageSize}}",
+            "offset": "{{(Table1.pageNo - 1)* Table1.pageSize}}"
           }
         },
         "projection": {
@@ -69,7 +69,14 @@
       "name": "Fruition ",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.pagination.data.limit"
+      },
+      {
+        "key": "formData.pagination.data.offset"
+      }
+    ],
     "executeOnLoad": true,
     "name": "Fetch_qry",
     "pageId": "Page1",
