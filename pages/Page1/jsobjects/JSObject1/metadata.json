@@ -22,6 +22,10 @@
       {
         "name": "mdl1_multiSelRes",
         "value": "''"
+      },
+      {
+        "name": "myPging",
+        "value": "0"
       }
     ]
   }

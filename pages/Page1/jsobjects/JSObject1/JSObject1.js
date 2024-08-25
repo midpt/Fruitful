@@ -3,11 +3,13 @@ export default {
 	myVar2: {},
 	mdl1_multiSelOptList:[],	
 	mdl1_multiSelRes:'',
+	myPging:0,
 
 
 	myFun1 () {
 		//	write code here
 		//	this.myVar1 = [1,2,3]
+	
 	},
 
 	async myFun2 () {
@@ -173,23 +175,42 @@ export default {
 		
 	},
 	
+
 	nxt: async()=>{
 		//Table1.pageOffset, Table1.pageSize  	Table1.pageOffset Table1.pageNo
-		let totalRec=Table1.totalRecordsCount;
+		IcnButt_previous.setDisabled(false);
+		let totalRec= await FetchDrpDwn_qry.data[0].TotalRec;
+		let totalRecViewedViaNxt=0;
+		let totalPg=0;
+		totalPg=Math.ceil((totalRec)/(Table1.pageSize))
+	////	if(Table1.pageNo < totalPg ){
+		//	this.myPging++;
+		//	await Fetch_qry.run();
+	//		totalRecViewedViaNxt=Table1.pageSize * (Table1.pageNo-1)+Table1.tableData.length;
+	//		totalRecViewedViaNxt =>totalRec? IcnButt_next.setDisabled(true):IcnButt_next.setDisabled(false)	;
+	//	 }
+	//	Table1.setSelectedRowIndex(20);
+		//totalRecViewedViaNxt=Table1.pageSize * (Table1.pageNo-1)+Table1.tableData.length;
+		//if(totalRecViewedViaNxt =>totalRec ) IcnButt_next.setDisabled(true)	;
 		
-		 
-		showAlert('Table1.totalRecordsCount='+Table1.totalRecordsCount+'  pageSize='+Table1.pageSize+'\n pageOffset='+Table1.pageOffset+' pageNum='+Table1.pageNo+' \ntableData.length='+Table1.tableData.length+' Fetch_qry.data?.length='+Fetch_qry.data?.length);
+		showAlert('Table1.totalRecordsCount='+Table1.totalRecordsCount+'  pageSize='+Table1.pageSize+'\n pageOffset='+Table1.pageOffset+' pageNum='+Table1.pageNo+' \ntableData.length='+Table1.tableData.length+' Fetch_qry.data.length='+Fetch_qry.data.length+' totalRecViewedViaNxt='+totalRecViewedViaNxt);
 		
-	// Table1.pageNo
-		
-		
-		return Table1.tableData.length
-
+		return totalRecViewedViaNxt
 		
 	},
 	
 	prev: async()=>{
+		//Table1.pageOffset, Table1.pageSize  	Table1.pageOffset Table1.pageNo
+		IcnButt_next.setDisabled(false);
+		let totalRec= await FetchDrpDwn_qry.data[0].TotalRec;
+		let totalRecViewedViaNxt=0;
+		//totalRecViewedViaNxt=Table1.pageSize * (Table1.pageNo-1)+Table1.tableData.length;
+		if(Table1.pageNo >1 )Table1.pageNo--;
+		if( Table1.pageNo <= 1) IcnButt_previous.setDisabled(true)	;
 		
+	//	showAlert('Table1.totalRecordsCount='+Table1.totalRecordsCount+'  pageSize='+Table1.pageSize+'\n pageOffset='+Table1.pageOffset+' pageNum='+Table1.pageNo+' \ntableData.length='+Table1.tableData.length+' Fetch_qry.data.length='+Fetch_qry.data.length+' totalRecViewedViaNxt='+totalRecViewedViaNxt);
+		
+		return totalRecViewedViaNxt		
 	},
 
 	
