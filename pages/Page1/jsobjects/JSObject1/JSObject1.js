@@ -175,10 +175,10 @@ export default {
 		
 	},
 	
-
+ //---Not use---
 	nxt: async()=>{
 		//Table1.pageOffset, Table1.pageSize  	Table1.pageOffset Table1.pageNo
-		IcnButt_previous.setDisabled(false);
+	//	IcnButt_previous.setDisabled(false);
 		let totalRec= await FetchDrpDwn_qry.data[0].TotalRec;
 		let totalRecViewedViaNxt=0;
 		let totalPg=0;
@@ -199,9 +199,10 @@ export default {
 		
 	},
 	
+	//--NOT use
 	prev: async()=>{
 		//Table1.pageOffset, Table1.pageSize  	Table1.pageOffset Table1.pageNo
-		IcnButt_next.setDisabled(false);
+	//	IcnButt_next.setDisabled(false);
 		let totalRec= await FetchDrpDwn_qry.data[0].TotalRec;
 		let totalRecViewedViaNxt=0;
 		//totalRecViewedViaNxt=Table1.pageSize * (Table1.pageNo-1)+Table1.tableData.length;
