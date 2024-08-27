@@ -52,10 +52,10 @@
   "columnWidthMap": {
     "Comment": 60,
     "Date": 134,
-    "Description": 456,
+    "Description": 310,
     "Fruit_Types": 82,
-    "Fruit_Types1": 74,
-    "Grading": 102,
+    "Fruit_Types1": 100,
+    "Grading": 89,
     "Image": 94,
     "Price": 60,
     "Quantity": 60,
