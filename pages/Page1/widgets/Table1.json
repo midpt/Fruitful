@@ -8,6 +8,7 @@
   "bottomRow": 33,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
+  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
   "childStylesheet": {
     "button": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -32,7 +33,6 @@
     }
   },
   "columnOrder": [
-    "customColumn1",
     "Fruit_Types1",
     "Grading",
     "Description",
@@ -45,13 +45,14 @@
     "Date",
     "From",
     "rowIndex",
+    "customColumn1",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1724719201733,
+  "columnUpdatedAt": 1724724276613,
   "columnWidthMap": {
     "Comment": 60,
     "Date": 134,
-    "Description": 121,
+    "Description": 456,
     "Fruit_Types": 82,
     "Fruit_Types1": 74,
     "Grading": 102,
@@ -135,6 +136,54 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "cellBackground"
+    },
+    {
+      "key": "primaryColumns.Grading.cellBackground"
+    },
+    {
+      "key": "primaryColumns.Comment.cellBackground"
+    },
+    {
+      "key": "primaryColumns.Price.cellBackground"
+    },
+    {
+      "key": "primaryColumns.Quantity.cellBackground"
+    },
+    {
+      "key": "primaryColumns.Image.cellBackground"
+    },
+    {
+      "key": "primaryColumns.Date.cellBackground"
+    },
+    {
+      "key": "primaryColumns.Season.cellBackground"
+    },
+    {
+      "key": "primaryColumns.rowIndex.cellBackground"
+    },
+    {
+      "key": "primaryColumns.EditActions1.cellBackground"
+    },
+    {
+      "key": "primaryColumns.Description.cellBackground"
+    },
+    {
+      "key": "primaryColumns.Fruit_Types1.cellBackground"
+    },
+    {
+      "key": "primaryColumns.Country.cellBackground"
+    },
+    {
+      "key": "primaryColumns.From.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn1.cellBackground"
     }
   ],
   "dynamicPropertyPathList": [
@@ -147,9 +196,6 @@
   ],
   "dynamicTriggerPathList": [
     {
-      "key": "primaryColumns.customColumn1.onClick"
-    },
-    {
       "key": "primaryColumns.EditActions1.onSave"
     },
     {
@@ -160,6 +206,9 @@
     },
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -192,7 +241,7 @@
       "alias": "Comment",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Comment\"]))}}",
       "currencyCode": "USD",
@@ -226,7 +275,7 @@
       "alias": "Country",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Country\"]))}}",
       "currencyCode": "USD",
@@ -260,7 +309,7 @@
       "alias": "Date",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "number",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Date\"]))}}",
       "currencyCode": "USD",
@@ -294,7 +343,7 @@
       "alias": "Description",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Description\"]))}}",
       "currencyCode": "USD",
@@ -329,6 +378,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "buttonStyle": "rgb(3, 179, 101)",
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "editActions",
       "computedValue": "",
       "currencyCode": "USD",
@@ -369,7 +419,7 @@
       "alias": "From",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"From\"]))}}",
       "currencyCode": "USD",
@@ -403,7 +453,7 @@
       "alias": "Fruit_Types",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Fruit_Types\"]))}}",
       "currencyCode": "USD",
@@ -437,7 +487,7 @@
       "alias": "Grading",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Grading\"]))}}",
       "currencyCode": "USD",
@@ -471,7 +521,7 @@
       "alias": "Image",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Image\"]))}}",
       "currencyCode": "USD",
@@ -505,7 +555,7 @@
       "alias": "Price",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Price\"]))}}",
       "currencyCode": "USD",
@@ -539,7 +589,7 @@
       "alias": "Quantity",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Quantity\"]))}}",
       "currencyCode": "USD",
@@ -573,7 +623,7 @@
       "alias": "Season",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Season\"]))}}",
       "currencyCode": "USD",
@@ -607,10 +657,11 @@
       "alias": "Del",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
       "buttonColor": "#ef4444",
-      "buttonLabel": "Del",
       "buttonStyle": "rgb(3, 179, 101)",
-      "buttonVariant": "PRIMARY",
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "iconButton",
       "computedValue": "",
       "currencyCode": "USD",
@@ -633,7 +684,7 @@
       "label": "Del",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{DelARow_qry.run().then(() => {\n  Fetch_qry.run();\n});\nDelARow_qry.run().then(() => {\n  Fetch_qry.run();\n});}}",
+      "onClick": "{{DelARow_qry.run().then(() => {\n  Fetch_qry.run();\n});}}",
       "originalId": "customColumn1",
       "sticky": "",
       "textSize": "0.875rem",
@@ -646,7 +697,7 @@
       "alias": "rowIndex",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "number",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rowIndex\"]))}}",
       "currencyCode": "USD",
@@ -679,7 +730,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 57,
+  "rightColumn": 64,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
